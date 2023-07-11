@@ -37,3 +37,16 @@ function efectoHabilidades() {
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+//descargar pdf
+document.getElementById("descargar-btn").addEventListener("click", function () {
+  var archivoPdf = "";
+
+  // Crea un enlace temporal
+  var link = document.createElement("a");
+  link.href = archivoPdf;
+  link.target = "_blank";
+  link.download = "nombre_archivo.pdf"; // personalizar el nombre del archivo
+
+  link.click();
+});
