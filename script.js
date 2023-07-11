@@ -40,8 +40,7 @@ window.onscroll = function () {
 
 //descargar pdf
 document.getElementById("descargar-btn").addEventListener("click", function () {
-  var archivoPdf =
-    "https://github.com/victorlavadoalva/portfolio.github.io/cv/victor.pdf";
+  var archivoPdf = "cv/victor.pdf";
 
   // Crea un enlace temporal
   var link = document.createElement("a");
