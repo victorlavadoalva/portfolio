@@ -18,19 +18,21 @@
     <div class="contenedor-header">
       <header>
         <div class="logo">
-          <a href="#">Nick</a>
+          <a href="#">Victor</a>
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#sobremi">SOBRE MI</a></li>
-            <li><a href="#skill">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -56,11 +58,13 @@
       <div class="contenido-seccion">
         <h2>Sobre Mi</h2>
         <p>
-          <span> Hola, soy Victor Lavado</span> Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Quidem porro aut a architecto
-          reprehenderit quo omnis quia tenetur quisquam aspernatur nostrum
-          eligendi doloribus quaerat ex, laboriosam non doloremque. Cumque,
-          vero.
+          <span> Hola, soy Victor Lavado</span> Desarrollador web Fullstack, las
+          tecnologías que uso son JavasScript, React, Express, PostgreSQL,
+          MongoDB, Redux, Github, HTML, CSS. Actualmente estoy buscando un
+          trabajo como desarrollador web en el rol de Frontend, Backend o
+          FullStack. Mi objetivo es crecer como profesional para poder aportar
+          mis conocimientos a proyectos que me gusten y sean influyentes en el
+          mundo. <br />Contáctame! Mail: victorlavado15@gmail.com
         </p>
 
         <div class="fila">
@@ -127,11 +131,6 @@
                 <i class="fa-solid fa-car"></i>
                 <span>AUTOS</span>
               </div>
-
-              <div class="interes">
-                <i class="fa-solid fa-car"></i>
-                <span>AUTOS</span>
-              </div>
             </div>
           </div>
         </div>
@@ -141,5 +140,222 @@
         </button>
       </div>
     </section>
+
+    <!-- Seccion Skills-->
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>React Js</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Skill   -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingeniería de Sistemas</h4>
+              <span class="casa">Universidad de San Martín de Porres</span>
+              <span class="fecha">2015 - 2021</span>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Ingles Intermedio</h4>
+              <span class="casa">ICPNA</span>
+              <span class="fecha">2014 - 2016</span>
+
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>PRACTICANTE PROFESIONAL DE MESA DE AYUDA</h4>
+              <span class="casa">KPMG Perú</span>
+              <span class="fecha">2021 - 2022</span>
+              <p>
+                Soporte técnico a usuarios (presencial y remoto)<br />
+                Registro y control de usuarios y equipos en el AD<br />
+                Mantenimiento e instalación de equipos informáticos, hardware y
+                software<br />
+                Mantenimiento preventivo y correctivo de equipos<br />
+                Soporte técnico en consolas de encriptación<br />
+                Preparación de Respaldos y Restauraciones
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>PRACTICANTE DE SOPORTE TÉCNICO</h4>
+              <span class="casa">Nombre de Compañía</span>
+              <span class="fecha">2019 - 2020</span>
+              <p>
+                Configuración de sistemas operativos Windows <br />Mantenimiento
+                lógico y físico de los equipos de cómputo e impresoras
+                <br />Atención de incidencias presentadas por los usuarios
+                <br />Monitorear que en todas las áreas se tenga disponibilidad
+                de los servicios de TI: Internet, conectividad, etc.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/ppp.png" alt="" />
+            <div class="overlay">
+              <h3>Pixel Port</h3>
+              <p>Ecommerce</p>
+              <a href="https://pf-ecommerce-front-production.up.railway.app/"
+                >Ingresa</a
+              >
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/coming.jpg" alt="" />
+            <div class="overlay">
+              <h3>En desarrollo</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <p>© 2023 Victor</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
