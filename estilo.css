@@ -310,6 +310,19 @@ html {
   }
 }
 
+.skills .skill .nodejs {
+  width: 0%;
+  animation: 2s nodejs forwards;
+}
+@keyframes nodejs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
 .skills .skill .wordpress {
   width: 0%;
   animation: 2s wordpress forwards;
